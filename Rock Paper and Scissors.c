@@ -1,13 +1,13 @@
 
 #include<stdio.h>
-void main()
+int main()
 { 	
 	printf("Welcome to the game of rock paper and scissors\n\n");
 	int n;
-	printf("Enter the number of rounds u want to play: ");	scanf("%d",&n);
+	printf("Enter the number of rounds u want to play. The maximum limit is 5: ");	scanf("%d",&n);
 	if(n>5)
 	{
-		printf("Too many rounds. Please chose 5 or less than\n\n");
+		printf("Too many rounds. Please choose 5 or less than\n\n");
 	}	
 	else
 	{
@@ -117,7 +117,8 @@ void main()
 		}
 		}	
 	printf("The game is over\nYou win %d times out of %d times",j,n);
-}
+}	
+	return 0;
 }
 	
 
